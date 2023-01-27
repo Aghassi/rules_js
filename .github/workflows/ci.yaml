@@ -71,8 +71,8 @@ jobs:
               run: echo "folder=." >> $GITHUB_OUTPUT
             - id: bzlmod
               run: echo "folder=e2e/bzlmod" >> $GITHUB_OUTPUT
-            - id: js_image
-              run: echo "folder=e2e/js_image" >> $GITHUB_OUTPUT
+            - id: js_image_docker
+              run: echo "folder=e2e/js_image_docker" >> $GITHUB_OUTPUT
             - id: js_run_devserver
               run: echo "folder=e2e/js_run_devserver" >> $GITHUB_OUTPUT
             - id: npm_link_package-esm
@@ -156,7 +156,7 @@ jobs:
                     # TODO: un-exclude the following bzlmod tests once they work
                     - folder: .
                       bzlmodEnabled: true
-                    - folder: e2e/js_image
+                    - folder: e2e/js_image_docker
                       bzlmodEnabled: true
                     - folder: e2e/js_run_devserver
                       bzlmodEnabled: true
