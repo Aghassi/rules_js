@@ -7,9 +7,12 @@ workspaces:
     - e2e/bzlmod:
           group:
               icon: bazel
-    - e2e/js_image:
+    - e2e/js_image_docker:
           group:
               icon: docker
+    - e2e/js_image_oci:
+          group:
+              icon: linux
     # No test targets. Requires running test.sh.
     # - e2e/js_run_devserver:
     #       group:
